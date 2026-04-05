@@ -1,0 +1,28 @@
+{
+  "name": "cowlace",
+  "version": "1.0.0",
+  "description": "Cattle GPS tracking system for Indian free-grazing conditions",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "db:setup": "psql $DATABASE_URL -f server/db/schema.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohithreddy1095/cowlace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rohithreddy1095/cowlace/issues"
+  },
+  "homepage": "https://github.com/rohithreddy1095/cowlace#readme",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "pg": "^8.20.0"
+  }
+}
